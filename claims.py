@@ -102,6 +102,7 @@ def my_claims(current_user = Depends(get_current_user)):
             """
             SELECT 
                 c.id,
+                c.item_id,
                 c.status,
                 c.message,
                 i.title,
